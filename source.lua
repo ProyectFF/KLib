@@ -577,7 +577,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				Position = WindowConfig.HidePremium and UDim2.new(0, 50, 0, 19) or UDim2.new(0, 50, 0, 12),
 				Font = Enum.Font.SourceSansBold,
 				ClipsDescendants = true
-			}), "Text"),
+			}), "Text"), -- CHECKPOINT1
 			AddThemeObject(SetProps(MakeElement("Label", "Test", 12), {
 				Size = UDim2.new(1, -60, 0, 12),
 				Position = UDim2.new(0, 50, 1, -25),
@@ -589,7 +589,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local WindowName = AddThemeObject(SetProps(MakeElement("Label", WindowConfig.Name, 14), {
 		Size = UDim2.new(1, -30, 2, 0),
 		Position = UDim2.new(0, 25, 0, -24),
-		Font = Enum.Font.SourceSansBlack,
+		Font = Enum.Font.SourceSansBold,
 		TextSize = 20
 	}), "Text")
 
@@ -769,7 +769,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			FirstTab = false
 			TabFrame.Ico.ImageTransparency = 0
 			TabFrame.Title.TextTransparency = 0
-			TabFrame.Title.Font = Enum.Font.SourceSansBlack
+			TabFrame.Title.Font = Enum.Font.SourceSansBold
 			Container.Visible = true
 		end    
 
@@ -788,7 +788,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			end  
 			TweenService:Create(TabFrame.Ico, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {ImageTransparency = 0}):Play()
 			TweenService:Create(TabFrame.Title, TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {TextTransparency = 0}):Play()
-			TabFrame.Title.Font = Enum.Font.SourceSansBlack
+			TabFrame.Title.Font = Enum.Font.SourceSansBold
 			Container.Visible = true   
 		end)
 
