@@ -3,14 +3,14 @@ An modified version of OrionLib. (PC ONLY)
 
 ## Booting the Library
 ```lua
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local KiriusLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/ProyectFF/KLib/refs/heads/main/source.lua')))()
 ```
 
 
 
 ## Creating a Window
 ```lua
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = KiriusLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -55,7 +55,7 @@ You can add elements to sections the same way you would add them to a tab normal
 
 ## Notifying the user
 ```lua
-OrionLib:MakeNotification({
+KiriusLib:MakeNotification({
 	Name = "Title!",
 	Content = "Notification content... what will it say??",
 	Image = "rbxassetid://4483345998",
@@ -268,7 +268,7 @@ Dropdown:Set("dropdown option")
 # Finishing your script (REQUIRED)
 The below function needs to be added at the end of your code.
 ```lua
-OrionLib:Init()
+KiriusLib:Init()
 ```
 
 ### How flags work.
@@ -282,7 +282,7 @@ Tab1:AddToggle({
     Flag = "toggle"
 })
 
-print(OrionLib.Flags["toggle"].Value) -- prints the value of the toggle.
+print(KiriusLib.Flags["toggle"].Value) -- prints the value of the toggle.
 ```
 Flags only work with the toggle, slider, dropdown, bind, and colorpicker.
 
@@ -295,5 +295,5 @@ Config files are made for every game the library is launched in.
 
 ## Destroying the Interface
 ```lua
-OrionLib:Destroy()
+KiriusLib:Destroy()
 ```
